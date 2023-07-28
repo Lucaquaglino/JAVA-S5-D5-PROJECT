@@ -87,7 +87,7 @@ public class Config {
 	@Bean("prenotazione1")
 
 	public Prenotazione prenotazione1() {
-		LocalDate dataPrenotazione = LocalDate.of(2023, 8, 10);
+		LocalDate dataPrenotazione = LocalDate.of(2022, 1, 1);
 		return Prenotazione.builder().id(UUID.randomUUID()).dataPrenotazione(dataPrenotazione).postazione(postazione2())
 				.utente(utente1()).build();
 	}
@@ -95,7 +95,7 @@ public class Config {
 	@Bean("prenotazione2")
 
 	public Prenotazione prenotazione2() {
-		LocalDate dataPrenotazione = LocalDate.of(2023, 8, 10);
+		LocalDate dataPrenotazione = LocalDate.of(2022, 8, 10);
 		return Prenotazione.builder().id(UUID.randomUUID()).dataPrenotazione(dataPrenotazione).postazione(postazione2())
 				.utente(utente1()).build();
 	}

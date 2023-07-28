@@ -26,9 +26,11 @@ public class Prenotazione {
 	@GeneratedValue
 	private UUID id;
 	private LocalDate dataPrenotazione;
+	private LocalDate dataScadenza;
 	@ManyToOne
 	private Postazione postazione;
-	@ManyToOne
 
+	@ManyToOne
 	private Utente utente;
+
 }
